@@ -1,22 +1,24 @@
-import React from 'react';
+import React from "react";
 import {
   Jumbotron,
   Container,
   CardColumns,
   Card,
   Button,
-} from 'react-bootstrap';
-
+} from "react-bootstrap";
 
 // TODO:  import the two hooks from Apollo Client you'll be using below
-import { QUERY_ME } from '../utils/queries';
-import { REMOVE_BOOK } from '../utils/mutations';
-import { removeBookId } from '../utils/localStorage';
+import { useQuery, useMutation } from "@apollo/client";
+import { QUERY_ME } from "../utils/queries";
+import { REMOVE_BOOK } from "../utils/mutations";
+import { removeBookId } from "../utils/localStorage";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
 const SavedBooks = () => {
   // TODO: Call the QUERY_ME query and destructure the loading and data response properties
+  const { loading, data } = useQuery(QUERY_ME);
+
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
   const userData = data?.me || {};
@@ -57,9 +59,9 @@ const SavedBooks = () => {
         <h2>
           {userData.savedBooks?.length
             ? `Viewing ${userData.savedBooks.length} saved ${
-                userData.savedBooks.length === 1 ? 'book' : 'books'
+                userData.savedBooks.length === 1 ? "book" : "books"
               }:`
-            : 'You have no saved books!'}
+            : "You have no saved books!"}
         </h2>
         <CardColumns>
           {userData.savedBooks?.map((book) => {
