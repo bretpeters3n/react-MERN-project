@@ -45,7 +45,7 @@ export const SAVE_BOOK = gql`
 // TODO: Create a REMOVE_BOOK endpoint (Hint: it will look fairly similar to the SAVE_BOOK endpoint above, but NOT THE SAME)
 export const REMOVE_BOOK = gql`
   mutation removeBook($bookId: ID!) {
-    removeBook(bookId: $ID!) {
+    removeBook(bookId: $bookId) {
       _id
       username
       email
