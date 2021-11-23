@@ -12,7 +12,7 @@ This project was deployed on Heroku and uses Mongo Atlas. This project was also 
 
 ## heroku deployment link
 
-https://bretpeters3n.github.io/react-portfolio/
+https://google-books-bretpeters3n.herokuapp.com/
 
 ## animated GIF project walk through
 
