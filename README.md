@@ -25,16 +25,19 @@
   -->
 
 <h1 align="center">React MERN Project</h1>
+
   <p align="center">
     <img src="https://img.shields.io/badge/HTML-orange"/>
     <img src="https://img.shields.io/badge/CSS-yellow"/>
     <!--<img src="https://img.shields.io/badge/Bulma-blue"/>-->
-    <img src="https://img.shields.io/badge/Javascript-indigo"/>
+    <img src="https://img.shields.io/badge/Javascript-green"/>
     <!--<img src="https://img.shields.io/badge/jQuery-violet"/>-->
-    <img src="https://img.shields.io/badge/-Node.js-violet"/>
+    <img src="https://img.shields.io/badge/-Node.js-blue"/>
+    <img src="https://img.shields.io/badge/-React-indigo"/>
     <!--<img src="https://img.shields.io/badge/-JSON-red"/>
     <img src="https://img.shields.io/badge/-SQL-orange  "/>-->
-    </p>
+  </p>
+
   <p align="center">
     This project involved making a node application (with Inquirer) that will assist the user in building a team profile page for their own team.
     <br />
@@ -95,7 +98,6 @@ Issues will be fixed when I convert this to a React app in the future.
 * CSS
 * Javascript
 * [NodeJS](https://nodejs.org/en/)
-<!--* [jQuery](https://jquery.com/)-->
 * [Bootstrap](https://getbootstrap.com/)
 * [React](https://reactjs.org/)
 
